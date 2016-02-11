@@ -1,0 +1,2 @@
+defmodule Skill do
+end
