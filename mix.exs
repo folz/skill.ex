@@ -5,10 +5,11 @@ defmodule Skill.Mixfile do
     [app: :skill,
      version: "0.0.1",
      elixir: "~> 1.2",
+     description: description,
      package: package,
+     deps: deps,
      build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps]
+     start_permanent: Mix.env == :prod]
   end
 
   # Configuration for the OTP application
@@ -18,8 +19,16 @@ defmodule Skill.Mixfile do
     [applications: [:logger]]
   end
 
+  defp description do
+    """
+    A skill-based ranking algorithms library for Elixir. Includes Elo and TrueSkill.
+    """
+  end
+
   defp package do
-    [licenses: ["MPL-2.0"]]
+    [maintainers: ["Rodney Folz"],
+     licenses: ["MPL-2.0"],
+     links: %{"GitHub": "https://github.com/folz/skill.ex"}]
   end
 
   # Dependencies can be Hex packages:

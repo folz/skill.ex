@@ -1,10 +1,10 @@
 # Skill
 
-**TODO: Add description**
+A skill-based ranking algorithms library for Elixir. Includes Elo and TrueSkill.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Skill is [available in Hex](https://hex.pm/packages/skill). The package can be installed as:
 
   1. Add skill to your list of dependencies in `mix.exs`:
 
