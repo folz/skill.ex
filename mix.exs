@@ -5,6 +5,7 @@ defmodule Skill.Mixfile do
     [app: :skill,
      version: "0.0.1",
      elixir: "~> 1.2",
+     package: package,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -15,6 +16,10 @@ defmodule Skill.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger]]
+  end
+
+  defp package do
+    [licenses: ["MPL-2.0"]]
   end
 
   # Dependencies can be Hex packages:
